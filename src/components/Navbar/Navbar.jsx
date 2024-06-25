@@ -29,7 +29,7 @@ function Navbar() {
               <IoHome />
               <span>Bosh Sahifa</span>
             </NavLink>
-            <NavLink to={"/User"} className="navbar__item">
+            <NavLink to={"/"} className="navbar__item">
               <FaRegUser />
               <span>User</span>
             </NavLink>
