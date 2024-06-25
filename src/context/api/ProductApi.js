@@ -13,7 +13,7 @@ export const productApi = api.injectEndpoints({
     // Post request
     createProduct: build.mutation({
       query: (body) => ({
-        url: "/products",
+        url: "/products/create",
         method: "POST",
         body,
       }),
@@ -36,10 +36,19 @@ export const productApi = api.injectEndpoints({
       }),
       invalidatesTags: ["Product"],
     }),
+    postSignIn: build.mutation({
+      query: (body) => ({
+        url: "/auth/sign-in",
+        method: "POST",
+        body,
+      }),
+      invalidatesTags: ["User"],
+    }),
   }),
 });
 
 export const {
+  usePostSignInMutation,
   useGetProductsQuery,
   useDeleteProductMutation,
   useCreateProductMutation,
