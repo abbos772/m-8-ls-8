@@ -41,6 +41,10 @@ function Navbar() {
               <FiShoppingCart />
               <span>Register</span>
             </NavLink>
+            <NavLink to={"/Create-Product"} className="navbar__item">
+              <FiShoppingCart />
+              <span>Create</span>
+            </NavLink>
           </div>
         </nav>
       </div>
